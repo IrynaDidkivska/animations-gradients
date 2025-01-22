@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #3498db;
+}
+
+.top-left {
+  background-color: #e74c3c;
+  animation: moveRight 8s infinite ease-in-out;
+}
+
+.top-right {
+  background-color: #2ecc71;
+  top: 0;
+  right: 0;
+  animation: moveDown 8s infinite ease-in-out;
+}
+
+.bottom-right {
+  background-color: #f1c40f;
+  bottom: 0;
+  right: 0;
+  animation: moveLeft 8s infinite ease-in-out;
+}
+
+.bottom-left {
+  background-color: #9b59b6;
+  bottom: 0;
+  left: 0;
+  animation: moveUp 8s infinite ease-in-out;
+}
+
+@keyframes moveRight {
+  0%,
+  25% {
+    left: 0;
+    top: 0;
+  }
+  30%,
+  50% {
+    left: 150px;
+    top: 0;
+  }
+  55%,
+  100% {
+    left: 150px;
+    top: 0;
+  }
+}
+
+@keyframes moveDown {
+  0%,
+  25% {
+    top: 0;
+    right: 0;
+  }
+  30%,
+  50% {
+    top: 150px;
+    right: 0;
+  }
+  55%,
+  100% {
+    top: 150px;
+    right: 0;
+  }
+}
+
+@keyframes moveLeft {
+  0%,
+  25% {
+    right: 0;
+    bottom: 0;
+  }
+  30%,
+  50% {
+    right: 150px;
+    bottom: 0;
+  }
+  55%,
+  100% {
+    right: 150px;
+    bottom: 0;
+  }
+}
+
+@keyframes moveUp {
+  0%,
+  25% {
+    left: 0;
+    bottom: 0;
+  }
+  30%,
+  50% {
+    left: 0;
+    bottom: 150px;
+  }
+  55%,
+  100% {
+    left: 0;
+    bottom: 150px;
+  }
+}
