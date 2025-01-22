@@ -19,6 +19,13 @@ body {
   border-radius: 10px;
 }
 
+.wrapper {
+  position: relative;
+}
+.wrapper:hover .tooltip {
+  display: block;
+}
+
 .city {
   position: absolute;
   width: 20px;
@@ -35,6 +42,7 @@ body {
 }
 
 .tooltip {
+  margin: 15px;
   display: none;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
